@@ -16,6 +16,8 @@
   --green: #31d0aa;
   --subtle-text: #afb1b8;
   --border: #8e8f99;
+  --dark: rgba(46, 47, 66, 0.4);
+  --diary: rgba(252, 252, 252, 1);
 }
 
 body {
@@ -520,4 +522,30 @@ img {
 
 .gallery-img {
   width: 100%;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 408px;
+  min-height: 576px;
+  background-color: var(--diary);
+  border-radius: 4px;
 }
