@@ -87,8 +87,20 @@ img {
   margin-right: 40px;
 } */
 
+.line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--active-color);
+  border-radius: 2px;
+}
+
 .link {
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -160,8 +172,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
-
   display: block;
   align-items: center;
   letter-spacing: 0.04em;
@@ -171,6 +181,9 @@ img {
   padding: 16px 34px;
   border: 0px;
   margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-hero .button {
@@ -312,6 +325,9 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -363,6 +379,9 @@ img {
 
 .customers-icon {
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -501,6 +520,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery .link:hover,
@@ -548,4 +570,10 @@ img {
   min-height: 576px;
   background-color: var(--diary);
   border-radius: 4px;
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
