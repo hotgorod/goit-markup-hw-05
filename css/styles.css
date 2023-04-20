@@ -70,7 +70,6 @@ img {
   gap: 40px;
 }
 .site-nav .link {
-  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -87,7 +86,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link.active::after {
+.active {
+  position: relative;
+}
+
+.active::after {
   content: "";
   position: absolute;
   left: 0;
