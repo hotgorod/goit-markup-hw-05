@@ -262,7 +262,7 @@ img {
 .button-close:hover,
 .button-close:focus {
   background-color: var(--active-color);
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 
 .section-title {
